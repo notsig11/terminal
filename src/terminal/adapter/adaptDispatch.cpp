@@ -1919,7 +1919,7 @@ bool AdaptDispatch::_ModeParamsHelper(const DispatchTypes::ModeParams param, con
         _terminalInput.SetInputMode(TerminalInput::Mode::AlternateScroll, enable);
         return !_PassThroughInputModes();
     case DispatchTypes::ModeParams::ASB_AlternateScreenBuffer:
-        _SetAlternateScreenBufferMode(enable);
+//        _SetAlternateScreenBufferMode(enable);
         return true;
     case DispatchTypes::ModeParams::XTERM_BracketedPasteMode:
         _api.SetSystemMode(ITerminalApi::Mode::BracketedPaste, enable);
